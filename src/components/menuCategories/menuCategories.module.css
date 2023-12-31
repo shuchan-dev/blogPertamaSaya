@@ -1,0 +1,43 @@
+.categoryList {
+  margin-top: 35px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.categoryItem {
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+}
+
+.categoryItem:hover {
+  border-radius: 30px;
+}
+
+.style {
+  background-color: #50737a;
+  color: aliceblue !important;
+}
+.fashion {
+  background-color: crimson !important;
+  color: aliceblue !important;
+}
+.culture {
+  background-color: #2f87aa;
+  color: aliceblue !important;
+}
+.coding {
+  background-color: #bd339a;
+  color: aliceblue !important;
+}
+.food {
+  background-color: #31b171;
+  color: aliceblue !important;
+}
+.travel {
+  background-color: #6726b3;
+  color: aliceblue !important;
+}

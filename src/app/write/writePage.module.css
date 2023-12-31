@@ -1,0 +1,65 @@
+.editor {
+  display: flex;
+  gap: 20px;
+  height: 700px;
+  position: relative;
+}
+.textArea {
+  width: 100%;
+}
+
+.button,
+.addButton {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--textColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.addButton {
+  border-color: rgb(31, 175, 31);
+}
+
+.add {
+  display: flex;
+  gap: 20px;
+  background-color: var(--bg);
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  left: 50px;
+}
+.select {
+  margin-bottom: 50px;
+  padding: 10px 20px;
+  margin-left: 50px;
+  width: max-content;
+}
+.input {
+  padding: 30px;
+  font-size: 64px;
+  border: none;
+  outline: none;
+  background-color: transparent !important;
+  color: var(--textColor);
+}
+.input::placeholder {
+  color: #b3b3b1;
+}
+
+.publish {
+  position: absolute;
+  top: 80px;
+  right: 60px;
+  padding: 10px 20px;
+  border: none !important;
+  background-color: rgb(22, 173, 22);
+  color: white !important;
+  cursor: pointer;
+  border-radius: 20px;
+}

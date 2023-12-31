@@ -1,0 +1,69 @@
+.container {
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.imageContainer {
+  flex: 1;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.textContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.image {
+  object-fit: cover;
+}
+.date {
+  color: gray;
+}
+.category {
+  color: crimson;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.desc {
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--softTextColor);
+}
+
+.link {
+  border-bottom: 1px solid crimson;
+  width: max-content;
+  padding: 2px 0px;
+  position: relative;
+}
+
+.link::before {
+  /* Tambahkan ini */
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: crimson;
+  transition: width 0.3s ease; /* Tambahkan ini untuk animasi */
+}
+
+.link:hover::before {
+  /* Tambahkan ini */
+  width: 100%; /* Lebarkan garis saat di-hover */
+}
+
+@media screen and (max-width: 1280px) {
+  .imageContainer {
+    display: none;
+  }
+}
